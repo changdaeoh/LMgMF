@@ -17,7 +17,7 @@ from loader import load_data, Loader
 import wandb
 import argparse
 
-from models import NGCF, DINSMF, LightGCN
+from models import NGCF #, DINSMF, LightGCN
 from utils import seed_everything
 import pdb
 import json
@@ -144,10 +144,10 @@ if __name__ == '__main__':
     # else:
     if args.method == 'dins-ngcf':
         model = NGCF(n_params, args, norm_mat).to(device)
-    elif args.method == 'dins-mf':
-        model = DINSMF(n_params, args).to(device)
-    elif args.method == 'dins-lightgcn':
-        model = LightGCN(n_params, args, norm_mat).to(device)
+    # elif args.method == 'dins-mf':
+    #     model = DINSMF(n_params, args).to(device)
+    # elif args.method == 'dins-lightgcn':
+    #     model = LightGCN(n_params, args, norm_mat).to(device)
     else:
         raise ValueError
 
