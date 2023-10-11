@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+
+mf_modeling/runs/
+mf_modeling/wandb/
+mf_modeling/__pycache__/
+llama2/llama
+
+*.ipynb
+*.png
+*.csv
+
+__pycache__
